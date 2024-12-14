@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <body>
+        <div id="root">
+            <div class="flex flex-col min-h-screen">
+
+                <?php 
+                    include('./HeaderAndFooter/header.php');
+                ?>
+
+                <main class="flex-grow">
+                    <div class="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+                        <div class="relative overflow-hidden">
+                            <div class="max-w-7xl mx-auto">
+                                <div class="relative z-10 pb-8 sm:pb-16 md:pb-20 lg:w-full lg:pb-28 xl:pb-32">
+                                    <main class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
+                                        <div class="sm:text-center lg:text-left" id = "home_data">
+                                            <h1 class="text-4xl tracking-tight text-gray-900 sm:text-5xl md:text-6xl font-extrabold"><span class="block">Lost Something on</span><span class="block text-blue-600">Campus?</span></h1>
+                                            <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">Your campus lost and found solution. Quickly post lost items or help others find their belongings. Join your university community in making lost items found again.</p>
+                                            <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+                                                <div class="rounded-md shadow"><a class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:py-4 md:text-lg md:px-10" href="./signup-page/signup.php">Get Started</a></div>
+                                                <div class="mt-3 sm:mt-0 sm:ml-3"><a class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-blue-600 bg-white hover:bg-gray-50 md:py-4 md:text-lg md:px-10" href="./login-page/login.php">Sign In</a></div>
+                                            </div>
+                                        </div>
+                                    </main>
+                                </div>
+                            </div>
+                            <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2"><img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src="https://images.pexels.com/photos/159868/lost-cat-tree-sign-fun-159868.jpeg" alt="College campus" id = "home_img"></div>
+                        </div>
+
+
+                    <!----FEATURES---->
+                        <section class="py-20 bg-white">
+                            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                                <div class="text-center">
+                                    <h2 class="text-base text-blue-600 font-semibold tracking-wide uppercase">Features</h2>
+                                    <p class="mt-2 text-3xl font-extrabold text-gray-900 sm:text-4xl lg:text-5xl">Everything you need to find your items</p>
+                                    <p class="mt-4 max-w-2xl text-xl text-gray-500 mx-auto">Our platform provides all the tools necessary to help you recover lost items or return found ones to their rightful owners.</p>
+                                </div>
+                                <div class="mt-16">
+                                    <div class="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-3" id = "features_content">
+                                        <div class="group relative bg-white p-8 rounded-xl shadow-sm hover:shadow-lg transition-shadow" >
+                                            <div class="flex items-center justify-center h-16 w-16 rounded-full bg-blue-100 text-blue-600 mb-6 mx-auto"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search h-8 w-8">
+                                                    <circle cx="11" cy="11" r="8"></circle>
+                                                    <path d="m21 21-4.3-4.3"></path>
+                                                </svg></div>
+                                            <h3 class="text-xl font-bold text-gray-900 text-center mb-4">Quick Search</h3>
+                                            <p class="text-gray-500 text-center">Easily search through all lost and found items on campus. Our smart filtering system helps you find relevant items quickly.</p>
+                                        </div>
+                                        <div class="group relative bg-white p-8 rounded-xl shadow-sm hover:shadow-lg transition-shadow">
+                                            <div class="flex items-center justify-center h-16 w-16 rounded-full bg-blue-100 text-blue-600 mb-6 mx-auto"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield h-8 w-8">
+                                                    <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
+                                                </svg></div>
+                                            <h3 class="text-xl font-bold text-gray-900 text-center mb-4">Secure Verification</h3>
+                                            <p class="text-gray-500 text-center">Our verification system ensures items are returned to their rightful owners through secure ownership verification questions.</p>
+                                        </div>
+                                        <div class="group relative bg-white p-8 rounded-xl shadow-sm hover:shadow-lg transition-shadow">
+                                            <div class="flex items-center justify-center h-16 w-16 rounded-full bg-blue-100 text-blue-600 mb-6 mx-auto"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart h-8 w-8">
+                                                    <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>
+                                                </svg></div>
+                                            <h3 class="text-xl font-bold text-gray-900 text-center mb-4">Community Driven</h3>
+                                            <p class="text-gray-500 text-center">Join your campus community in helping each other. Our platform connects people who lost items with those who found them.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+
+                        <!---- HOW TO----->
+                        <section class="py-20 bg-gray-50">
+                            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                                <div class="text-center" >
+                                    <h2 class="text-3xl font-extrabold text-gray-900">How It Works</h2>
+                                    <p class="mt-4 text-lg text-gray-500">Follow these simple steps to get started</p>
+                                </div>
+                                <div class="mt-16" id = "howto_content">
+                                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8" >
+                                        <div class="text-center">
+                                            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white mx-auto">1</div>
+                                            <h3 class="mt-4 text-lg font-medium text-gray-900">Create an Account</h3>
+                                            <p class="mt-2 text-base text-gray-500">Sign up with your email and basic information</p>
+                                        </div>
+                                        <div class="text-center">
+                                            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white mx-auto">2</div>
+                                            <h3 class="mt-4 text-lg font-medium text-gray-900">Post or Search</h3>
+                                            <p class="mt-2 text-base text-gray-500">Post a lost/found item or search through listings</p>
+                                        </div>
+                                        <div class="text-center">
+                                            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white mx-auto">3</div>
+                                            <h3 class="mt-4 text-lg font-medium text-gray-900">Connect</h3>
+                                            <p class="mt-2 text-base text-gray-500">Connect with the finder/owner and verify ownership</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </main>
+
+                <?php 
+                    include('./HeaderAndFooter/footer.php');
+                ?>
+
+            </div>
+        </div>
+    </body>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+<!---Main Js-->
+<script src="./js/main.js"></script>
+</body>
+
+</html>

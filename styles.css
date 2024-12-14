@@ -1,0 +1,39 @@
+body, p, a, span,input#search, input, select, textarea, label{
+  font-family: 'Inter', sans-serif !important; 
+}
+
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif !important; 
+}
+
+/* Reset buttons and forms */
+button, input, select, textarea {
+  font: inherit;
+  color: inherit;
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  appearance: none;
+}
+
+input {
+  padding: 9px !important;
+  border: 1px solid gray;
+  padding-left: 12px !important;
+}
+
+textarea {
+  padding: 10px !important;
+  border: 1px solid;
+}
+
+select {
+  padding: 10px !important;
+  border: 1px solid;
+}
+
+input#search {
+  padding-left: 40px !important;
+}
