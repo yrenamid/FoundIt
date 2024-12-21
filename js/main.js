@@ -6,7 +6,9 @@ const sr = ScrollReveal({
 });
 
 sr.reveal(`#home_data, #home_img, #features_content, #howto_content`,  {
-    interval: 200
+    interval: 300
 })
+
+
 
 
